@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport | YatraX</title>
+    <link rel="stylesheet" href="transport.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="rishikesh.html" class="logo">YatraX <small>Travel Fairly · Explore Safely</small></a>
+    <a href="rishikesh.html" class="back-btn">← Back to Explore</a>
+</header>
+
+<section class="hero">
+    <span class="tag">TRAVEL SMART · TRAVEL SAFE</span>
+    <h1>Explore Rishikesh<br><span>With Easy Transport</span></h1>
+    <p>Find local buses, taxis and shared rides with estimated fares.</p>
+</section>
+
+<main class="container">
+
+    <section class="search-box">
+        <h2>Find Your Transport</h2>
+        <div class="route-form">
+            <div>
+                <label>From</label>
+                <select id="from">
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Tapovan">Tapovan</option>
+                    <option value="Ram Jhula">Ram Jhula</option>
+                    <option value="Lakshman Jhula">Lakshman Jhula</option>
+                    <option value="Triveni Ghat">Triveni Ghat</option>
+                    <option value="Neelkanth Temple">Neelkanth Temple</option>
+                    <option value="Dehradun">Dehradun</option>
+                </select>
+            </div>
+
+            <button type="button" class="swap" onclick="swapLocations()">⇄</button>
+
+            <div>
+                <label>To</label>
+                <select id="to">
+                    <option value="Tapovan">Tapovan</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Ram Jhula">Ram Jhula</option>
+                    <option value="Lakshman Jhula">Lakshman Jhula</option>
+                    <option value="Triveni Ghat">Triveni Ghat</option>
+                    <option value="Neelkanth Temple">Neelkanth Temple</option>
+                    <option value="Dehradun">Dehradun</option>
+                </select>
+            </div>
+
+            <button class="search-btn" onclick="findTransport()">Search</button>
+        </div>
+        <p id="routeMessage" class="route-message">Select your route to explore available transport options.</p>
+    </section>
+
+    <section class="transport-section">
+        <div class="section-heading">
+            <span>TRAVEL OPTIONS</span>
+            <h2>Choose Your Ride</h2>
+        </div>
+
+        <div class="transport-grid">
+
+            <article class="transport-card">
+                <div class="ride-icon">🚌</div>
+                <h3>Local Bus</h3>
+                <p>Budget-friendly public transport for local journeys.</p>
+                <div class="price">₹10 – ₹80 <small>Indicative fare</small></div>
+                <button onclick="showRide('Bus')">View Details</button>
+            </article>
+
+            <article class="transport-card featured">
+                <div class="ride-icon">🚕</div>
+                <h3>Private Taxi</h3>
+                <p>Comfortable travel for families and individual travellers.</p>
+                <div class="price">₹150 – ₹1500 <small>Indicative fare</small></div>
+                <button onclick="showRide('Taxi')">View Details</button>
+            </article>
+
+            <article class="transport-card">
+                <div class="ride-icon">🚙</div>
+                <h3>Shared Ride</h3>
+                <p>Share your journey and save on travel expenses.</p>
+                <div class="price">₹30 – ₹250 <small>Indicative fare</small></div>
+                <button onclick="showRide('Shared Ride')">View Details</button>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="fare-section">
+        <div>
+            <span>SMART TRAVEL</span>
+            <h2>Estimate Your Travel Fare</h2>
+            <p>Get an illustrative fare estimate before starting your journey.</p>
+        </div>
+
+        <div class="fare-calculator">
+            <label>Distance (in kilometres)</label>
+            <input type="number" id="distance" min="1" max="500" placeholder="Enter distance">
+
+            <label>Select Transport</label>
+            <select id="rideType">
+                <option value="bus">Local Bus</option>
+                <option value="taxi">Private Taxi</option>
+                <option value="shared">Shared Ride</option>
+            </select>
+
+            <button onclick="calculateFare()">Calculate Fare</button>
+            <div id="fareResult">Your estimated fare will appear here.</div>
+            <small>Illustrative estimates only. Actual fares depend on operator, route and availability.</small>
+        </div>
+    </section>
+
+    <section class="safety-note">
+        <span>🛡️</span>
+        <div>
+            <h3>Travel Safely with YatraX</h3>
+            <p>Confirm the vehicle, driver details and fare before starting your journey. Use verified operators whenever possible.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h2>YatraX</h2>
+    <p>Travel Fairly · Explore Safely</p>
+    <a href="rishikesh.html">Back to Rishikesh</a>
+</footer>
+
+<script src="transport.js"></script>
+</body>
+</html>

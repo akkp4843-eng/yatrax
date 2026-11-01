@@ -1,0 +1,314 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f8f4;
+    color: #183b30;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    box-shadow: 0 2px 12px #0000000b;
+}
+
+.logo {
+    color: #174b38;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #245a43;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #e1f0e4, #f7f8ee);
+}
+
+.tag, .section-heading span, .fare-section span {
+    color: #628b54;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 15px 0;
+    line-height: 1.25;
+}
+
+.hero h1 span {
+    color: #65915a;
+}
+
+.hero p {
+    color: #718078;
+}
+
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: 45px auto;
+}
+
+.search-box, .fare-calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #193e3010;
+}
+
+.search-box h2 {
+    margin-bottom: 22px;
+}
+
+.route-form {
+    display: grid;
+    grid-template-columns: 1fr 45px 1fr 130px;
+    gap: 15px;
+    align-items: end;
+}
+
+.route-form label, .fare-calculator label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+select, input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce7dd;
+    border-radius: 10px;
+    background: white;
+    font-family: inherit;
+    color: #234b39;
+}
+
+.swap, .search-btn, .fare-calculator button {
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.swap {
+    background: #edf4e9;
+    color: #326044;
+    font-size: 22px;
+}
+
+.search-btn, .fare-calculator button {
+    background: #245b40;
+    color: white;
+    font-weight: 600;
+}
+
+.route-message {
+    color: #738278;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.transport-section {
+    margin-top: 65px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2, .fare-section h2 {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.transport-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.transport-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid #e7eee7;
+    border-radius: 18px;
+    transition: .25s;
+}
+
+.transport-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px #00000010;
+}
+
+.transport-card.featured {
+    border: 2px solid #82a879;
+}
+
+.ride-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.transport-card h3 {
+    font-size: 21px;
+}
+
+.transport-card p {
+    font-size: 13px;
+    color: #758078;
+    margin: 12px 0 20px;
+    line-height: 1.8;
+}
+
+.price {
+    font-size: 23px;
+    font-weight: 700;
+    color: #2c6845;
+}
+
+.price small {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #89938c;
+}
+
+.transport-card button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #eaf2e7;
+    border: none;
+    border-radius: 9px;
+    color: #28583d;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fare-section {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.fare-section > div:first-child p {
+    margin-top: 15px;
+    color: #77847b;
+    line-height: 1.8;
+}
+
+.fare-calculator label {
+    margin-top: 15px;
+}
+
+.fare-calculator button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#fareResult {
+    background: #edf5eb;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #245b40;
+    margin-bottom: 12px;
+}
+
+.fare-calculator > small {
+    color: #89938c;
+    font-size: 11px;
+}
+
+.safety-note {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 65px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #e7f0e4;
+}
+
+.safety-note > span {
+    font-size: 35px;
+}
+
+.safety-note p {
+    color: #718078;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+footer {
+    background: #173f30;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 70px;
+}
+
+footer p {
+    margin: 10px;
+    color: #d4e3d8;
+}
+
+footer a {
+    color: white;
+}
+
+@media(max-width: 750px) {
+    .route-form {
+        grid-template-columns: 1fr;
+    }
+
+    .swap {
+        width: 50px;
+    }
+
+    .transport-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fare-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .back-btn {
+        font-size: 12px;
+    }
+}
