@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f8f4;
+    color: #183b30;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+}
+
+.logo {
+    color: #174b38;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.back {
+    color: #245a43;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #e1f0e4, #f7f8ee);
+}
+
+.hero span, .heading span {
+    color: #628b54;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 15px 0;
+}
+
+.hero b {
+    color: #65915a;
+}
+
+.hero p, .heading p {
+    color: #718078;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: 45px auto;
+}
+
+.search-panel {
+    background: white;
+    padding: 28px;
+    border-radius: 17px;
+    box-shadow: 0 8px 25px #0000000b;
+}
+
+.search-panel h2 {
+    margin-bottom: 20px;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    gap: 15px;
+    align-items: end;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce7dc;
+    border-radius: 9px;
+    background: white;
+    font-family: inherit;
+    color: #245b40;
+}
+
+.search-grid button, .room-info button {
+    padding: 13px;
+    background: #245b40;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.heading {
+    margin: 55px 0 25px;
+}
+
+.heading h2 {
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e6eee6;
+    transition: .25s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px #00000012;
+}
+
+.room-card img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 20px;
+}
+
+.sample {
+    display: inline-block;
+    color: #95651f;
+    background: #fff2dc;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.room-info h3 {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.room-info p {
+    font-size: 12px;
+    color: #78847c;
+    margin: 10px 0;
+}
+
+.facility {
+    font-size: 11px;
+    color: #55735f;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #286345;
+    margin: 14px 0;
+}
+
+.price small {
+    font-size: 10px;
+    font-weight: 400;
+    color: #78847c;
+}
+
+.room-info button {
+    width: 100%;
+}
+
+#noResults {
+    text-align: center;
+    padding: 30px;
+    color: #77847b;
+}
+
+.trust {
+    background: #e8f2e6;
+    padding: 27px;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+.trust p {
+    color: #718078;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+footer {
+    background: #173f30;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 65px;
+}
+
+footer p {
+    margin: 10px;
+    color: #d4e3d8;
+}
+
+footer a {
+    color: white;
+}
+
+@media(max-width: 800px) {
+    .room-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .back {
+        font-size: 12px;
+    }
+}

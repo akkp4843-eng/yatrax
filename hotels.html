@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels | YatraX Fair Price</title>
+    <link rel="stylesheet" href="hotels.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="rishikesh.html" class="logo">
+        YatraX
+        <small>Travel Fairly · Explore Safely</small>
+    </a>
+    <a href="rishikesh.html" class="back">← Back to Explore</a>
+</header>
+
+<section class="hero">
+    <span>STAY COMFORTABLY · PAY FAIRLY</span>
+    <h1>Discover Hotels<br><b>In Rishikesh</b></h1>
+    <p>Compare hotel prices, facilities and room options before booking.</p>
+</section>
+
+<main class="container">
+
+    <section class="search-panel">
+        <h2>Find Your Hotel</h2>
+
+        <div class="search-grid">
+            <div>
+                <label>Location</label>
+                <select id="location">
+                    <option value="all">All Locations</option>
+                    <option value="Tapovan">Tapovan</option>
+                    <option value="Ram Jhula">Ram Jhula</option>
+                    <option value="Rishikesh">Rishikesh City</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Maximum Budget / Night</label>
+                <select id="budget">
+                    <option value="999999">Any Budget</option>
+                    <option value="1500">Under ₹1,500</option>
+                    <option value="2500">Under ₹2,500</option>
+                    <option value="4000">Under ₹4,000</option>
+                </select>
+            </div>
+
+            <button id="searchBtn">Search Hotels</button>
+        </div>
+    </section>
+
+    <section class="heading">
+        <span>EXPLORE STAYS</span>
+        <h2>Hotels & Accommodation</h2>
+        <p>Compare sample hotel listings and room prices.</p>
+    </section>
+
+    <section class="hotel-grid" id="hotelGrid">
+
+        <article class="hotel-card" data-location="Tapovan" data-price="1200">
+            <img src="Images/Hotel1.jpeg" alt="Hotel room">
+
+            <div class="hotel-info">
+                <span class="sample">SAMPLE · NOT VERIFIED</span>
+                <h3>Mountain View Hotel</h3>
+                <p>📍 Tapovan, Rishikesh</p>
+                <div class="rating">★ Sample listing</div>
+
+                <div class="facilities">
+                    Wi-Fi · Restaurant · Parking
+                </div>
+
+                <div class="price">₹1,200 <small>/ night · Sample price</small></div>
+
+                <button onclick="showHotel('Mountain View Hotel')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-location="Ram Jhula" data-price="2200">
+            <img src="Images/Hotels.jpeg" alt="Hotel accommodation">
+
+            <div class="hotel-info">
+                <span class="sample">SAMPLE · NOT VERIFIED</span>
+                <h3>River View Hotel</h3>
+                <p>📍 Ram Jhula, Rishikesh</p>
+                <div class="rating">★ Sample listing</div>
+
+                <div class="facilities">
+                    River View · Wi-Fi · Restaurant
+                </div>
+
+                <div class="price">₹2,200 <small>/ night · Sample price</small></div>
+
+                <button onclick="showHotel('River View Hotel')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <article class="hotel-card" data-location="Rishikesh" data-price="3500">
+            <img src="Images/Stays.jpeg" alt="Luxury hotel">
+
+            <div class="hotel-info">
+                <span class="sample">SAMPLE · NOT VERIFIED</span>
+                <h3>Luxury Garden Resort</h3>
+                <p>📍 Rishikesh City</p>
+                <div class="rating">★ Sample listing</div>
+
+                <div class="facilities">
+                    Swimming Pool · AC · Restaurant
+                </div>
+
+                <div class="price">₹3,500 <small>/ night · Sample price</small></div>
+
+                <button onclick="showHotel('Luxury Garden Resort')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+    </section>
+
+    <p id="noResults" hidden>No hotels match your selected filters.</p>
+
+    <section class="trust">
+        <h3>🛡️ Verified Hotel Information</h3>
+        <p>Before a hotel receives verified status, YatraX will check business identity, property address, room photos, owner authorization and current tariff evidence. Sample listings are not verified properties.</p>
+    </section>
+
+</main>
+
+<footer>
+    <h2>YatraX</h2>
+    <p>Travel Fairly · Explore Safely</p>
+    <a href="rishikesh.html">Back to Rishikesh</a>
+</footer>
+
+<script src="hotels.js"></script>
+</body>
+</html>

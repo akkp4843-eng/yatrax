@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants & Fair Prices | YatraX</title>
+
+    <link rel="stylesheet" href="restaurants.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="rishikesh.html" class="logo">
+        YatraX
+        <small>Travel Fairly · Explore Safely</small>
+    </a>
+    <a href="rishikesh.html" class="back-btn">← Back to Explore</a>
+</header>
+
+<section class="hero">
+    <span class="tag">EAT LOCAL · PAY FAIR</span>
+    <h1>Discover Restaurants<br><span>With Fair Prices</span></h1>
+    <p>Explore local food, compare menu prices and make informed choices.</p>
+
+    <div class="search-box">
+        <input type="search" id="searchInput"
+        placeholder="Search restaurant or food...">
+        <button id="searchBtn">Search</button>
+    </div>
+</section>
+
+<main class="container">
+
+    <section class="intro">
+        <div>
+            <span>LOCAL FOOD GUIDE</span>
+            <h2>Explore Restaurants in Rishikesh</h2>
+            <p>Compare listed prices before choosing where to eat.</p>
+        </div>
+        <div class="price-note">₹ Fair Price Guide</div>
+    </section>
+
+    <section class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="cafe">Cafes</button>
+        <button class="filter-btn" data-category="restaurant">Restaurants</button>
+        <button class="filter-btn" data-category="local">Local Food</button>
+    </section>
+
+    <section class="restaurant-grid" id="restaurantGrid">
+
+        <article class="restaurant-card"
+        data-category="cafe" data-name="mountain cafe">
+
+            <div class="restaurant-image image-one">
+                <span class="demo-label">SAMPLE LISTING</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="card-heading">
+                    <h3>Mountain Cafe</h3>
+                    <span class="status pending">Demo</span>
+                </div>
+
+                <p class="location">📍 Tapovan, Rishikesh</p>
+                <p class="description">Cafe · Snacks · Beverages</p>
+
+                <div class="menu-price">
+                    <span>Tea / Coffee</span>
+                    <strong>₹40–₹100</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Sandwich</span>
+                    <strong>₹100–₹180</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Pizza</span>
+                    <strong>₹180–₹300</strong>
+                </div>
+
+                <p class="verified-date">Sample data · Not verified</p>
+
+                <button class="details-btn" onclick="showDetails('Mountain Cafe')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <article class="restaurant-card"
+        data-category="restaurant" data-name="river view restaurant">
+
+            <div class="restaurant-image image-two">
+                <span class="demo-label">SAMPLE LISTING</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="card-heading">
+                    <h3>River View Restaurant</h3>
+                    <span class="status pending">Demo</span>
+                </div>
+
+                <p class="location">📍 Ram Jhula, Rishikesh</p>
+                <p class="description">Indian Food · Thali · Snacks</p>
+
+                <div class="menu-price">
+                    <span>Veg Thali</span>
+                    <strong>₹120–₹200</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Paneer Dish</span>
+                    <strong>₹160–₹240</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Dal Rice</span>
+                    <strong>₹90–₹140</strong>
+                </div>
+
+                <p class="verified-date">Sample data · Not verified</p>
+
+                <button class="details-btn" onclick="showDetails('River View Restaurant')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+        <article class="restaurant-card"
+        data-category="local" data-name="pahadi kitchen">
+
+            <div class="restaurant-image image-three">
+                <span class="demo-label">SAMPLE LISTING</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="card-heading">
+                    <h3>Pahadi Kitchen</h3>
+                    <span class="status pending">Demo</span>
+                </div>
+
+                <p class="location">📍 Rishikesh</p>
+                <p class="description">Pahadi Food · Local Cuisine</p>
+
+                <div class="menu-price">
+                    <span>Traditional Thali</span>
+                    <strong>₹150–₹250</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Mandua Roti</span>
+                    <strong>₹30–₹60</strong>
+                </div>
+
+                <div class="menu-price">
+                    <span>Local Dish</span>
+                    <strong>₹100–₹180</strong>
+                </div>
+
+                <p class="verified-date">Sample data · Not verified</p>
+
+                <button class="details-btn" onclick="showDetails('Pahadi Kitchen')">
+                    View Details →
+                </button>
+            </div>
+        </article>
+
+    </section>
+
+    <p id="noResults" hidden>No restaurants found. Try another search.</p>
+
+    <section class="trust-section">
+        <div class="trust-icon">🛡️</div>
+        <div>
+            <h3>How YatraX Builds Trust</h3>
+            <p>Prices will be marked verified only after checking reliable menu evidence, owner confirmation and the last verification date. Sample listings are not verified businesses.</p>
+        </div>
+    </section>
+
+    <section class="report-section">
+        <h2>Found an Incorrect Price?</h2>
+        <p>Help travellers by reporting incorrect or outdated menu prices.</p>
+        <a href="mailto:YOUR_EMAIL@example.com?subject=YatraX%20Price%20Correction">
+            Report a Price →
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <h2>YatraX</h2>
+    <p>Travel Fairly · Explore Safely</p>
+    <a href="rishikesh.html">Back to Rishikesh</a>
+</footer>
+
+<script src="restaurants.js"></script>
+
+</body>
+</html>

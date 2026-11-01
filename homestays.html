@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homestays | YatraX</title>
+  <link rel="stylesheet" href="homestays.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="rishikesh.html" class="logo">Yatra<span>X</span></a>
+    <a href="rishikesh.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tag">STAY LOCAL • FEEL AT HOME</p>
+      <h1>Explore Homestays in Rishikesh</h1>
+      <p>Discover welcoming local homes and experience the culture of Uttarakhand.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <h2>Find Your Perfect Homestay</h2>
+    <p class="subtitle">Compare options and check their listed prices.</p>
+
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search homestay...">
+
+      <select id="locationFilter">
+        <option value="all">All Locations</option>
+        <option value="Tapovan">Tapovan</option>
+        <option value="Swarg Ashram">Swarg Ashram</option>
+        <option value="Shivpuri">Shivpuri</option>
+      </select>
+
+      <select id="budgetFilter">
+        <option value="all">Any Budget</option>
+        <option value="budget">Below ₹1500</option>
+        <option value="medium">₹1500 - ₹2500</option>
+        <option value="premium">Above ₹2500</option>
+      </select>
+    </div>
+
+    <div class="cards" id="homestayContainer">
+
+      <div class="stay-card" data-location="Tapovan" data-price="1100">
+        <img src="Images/Hotel1.jpeg" alt="Mountain homestay">
+        <div class="card-content">
+          <span class="verified">Sample Listing</span>
+          <h3>Mountain View Homestay</h3>
+          <p>📍 Tapovan, Rishikesh</p>
+          <p class="description">A peaceful stay with mountain views and a homely atmosphere.</p>
+          <div class="price">₹1,100 <small>/ night (sample)</small></div>
+          <button onclick="showDetails('Mountain View Homestay')">View Details</button>
+        </div>
+      </div>
+
+      <div class="stay-card" data-location="Swarg Ashram" data-price="1800">
+        <img src="Images/Hotels.jpeg" alt="Riverside homestay">
+        <div class="card-content">
+          <span class="verified">Sample Listing</span>
+          <h3>Riverside Family Homestay</h3>
+          <p>📍 Swarg Ashram, Rishikesh</p>
+          <p class="description">A simple family-style stay near the Ganga.</p>
+          <div class="price">₹1,800 <small>/ night (sample)</small></div>
+          <button onclick="showDetails('Riverside Family Homestay')">View Details</button>
+        </div>
+      </div>
+
+      <div class="stay-card" data-location="Shivpuri" data-price="2800">
+        <img src="Images/Stays.jpeg" alt="Nature homestay">
+        <div class="card-content">
+          <span class="verified">Sample Listing</span>
+          <h3>Nature Escape Homestay</h3>
+          <p>📍 Shivpuri, Rishikesh</p>
+          <p class="description">Enjoy a quiet stay surrounded by greenery and nature.</p>
+          <div class="price">₹2,800 <small>/ night (sample)</small></div>
+          <button onclick="showDetails('Nature Escape Homestay')">View Details</button>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="noResults" class="no-results" hidden>No homestays found. Try changing your filters.</p>
+
+    <p class="disclaimer">
+      Demo notice: These are sample listings and prices, not verified offers.
+      Verify the property, availability and final price before booking.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2026 YatraX | Explore Uttarakhand Responsibly</p>
+  </footer>
+
+  <script src="homestays.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Rooms | YatraX</title>
+    <link rel="stylesheet" href="rooms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="rishikesh.html" class="logo">
+        YatraX
+        <small>Travel Fairly · Explore Safely</small>
+    </a>
+    <a href="rishikesh.html" class="back">← Back to Explore</a>
+</header>
+
+<section class="hero">
+    <span>BUDGET STAYS · FAIR PRICES</span>
+    <h1>Find Comfortable<br><b>Rooms in Rishikesh</b></h1>
+    <p>Compare room prices, facilities and stay options before booking.</p>
+</section>
+
+<main class="container">
+
+    <section class="search-panel">
+        <h2>Find Your Perfect Room</h2>
+
+        <div class="search-grid">
+            <div>
+                <label>Location</label>
+                <select id="location">
+                    <option value="all">All Locations</option>
+                    <option value="Tapovan">Tapovan</option>
+                    <option value="Ram Jhula">Ram Jhula</option>
+                    <option value="Swarg Ashram">Swarg Ashram</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Maximum Budget / Night</label>
+                <select id="budget">
+                    <option value="999999">Any Budget</option>
+                    <option value="500">Under ₹500</option>
+                    <option value="1000">Under ₹1,000</option>
+                    <option value="1500">Under ₹1,500</option>
+                </select>
+            </div>
+
+            <button id="searchBtn">Search Rooms</button>
+        </div>
+    </section>
+
+    <section class="heading">
+        <span>EXPLORE STAYS</span>
+        <h2>Budget Rooms & Guest Houses</h2>
+        <p>Compare sample room listings and their facilities.</p>
+    </section>
+
+    <section class="room-grid" id="roomGrid">
+
+        <article class="room-card" data-location="Tapovan" data-price="450">
+            <img src="Images/Hotel1.jpeg" alt="Budget room">
+            <div class="room-info">
+                <span class="sample">SAMPLE LISTING · NOT VERIFIED</span>
+                <h3>Mountain Budget Room</h3>
+                <p>📍 Tapovan, Rishikesh</p>
+                <div class="facility">Wi-Fi · Attached Bathroom · Fan</div>
+                <div class="price">₹450 <small>/ night · Sample price</small></div>
+                <button onclick="showRoom('Mountain Budget Room')">View Details</button>
+            </div>
+        </article>
+
+        <article class="room-card" data-location="Ram Jhula" data-price="750">
+            <img src="Images/Hotels.jpeg" alt="Guest room">
+            <div class="room-info">
+                <span class="sample">SAMPLE LISTING · NOT VERIFIED</span>
+                <h3>River Side Guest Room</h3>
+                <p>📍 Ram Jhula, Rishikesh</p>
+                <div class="facility">Wi-Fi · Balcony · Hot Water</div>
+                <div class="price">₹750 <small>/ night · Sample price</small></div>
+                <button onclick="showRoom('River Side Guest Room')">View Details</button>
+            </div>
+        </article>
+
+        <article class="room-card" data-location="Swarg Ashram" data-price="950">
+            <img src="Images/Stays.jpeg" alt="Comfortable room">
+            <div class="room-info">
+                <span class="sample">SAMPLE LISTING · NOT VERIFIED</span>
+                <h3>Comfort Stay Room</h3>
+                <p>📍 Swarg Ashram, Rishikesh</p>
+                <div class="facility">AC · Attached Bathroom · Wi-Fi</div>
+                <div class="price">₹950 <small>/ night · Sample price</small></div>
+                <button onclick="showRoom('Comfort Stay Room')">View Details</button>
+            </div>
+        </article>
+
+    </section>
+
+    <p id="noResults" hidden>No rooms match your selected filters.</p>
+
+    <section class="trust">
+        <h3>🛡️ Stay with Confidence</h3>
+        <p>YatraX will display verified property details, owner confirmation, room photos and last-verified prices. Sample listings are not real verified properties.</p>
+    </section>
+
+</main>
+
+<footer>
+    <h2>YatraX</h2>
+    <p>Travel Fairly · Explore Safely</p>
+    <a href="rishikesh.html">Back to Rishikesh</a>
+</footer>
+
+<script src="rooms.js"></script>
+</body>
+</html>

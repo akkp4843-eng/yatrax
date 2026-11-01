@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Activities | YatraX</title>
+  <link rel="stylesheet" href="adventure.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="rishikesh.html" class="logo">Yatra<span>X</span></a>
+    <a href="rishikesh.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tag">EXPLORE • EXPERIENCE • ENJOY</p>
+      <h1>Adventure Awaits in Rishikesh</h1>
+      <p>Discover thrilling outdoor experiences in the heart of Uttarakhand.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <h2>Explore Adventure Activities</h2>
+    <p class="subtitle">Discover activities, compare indicative prices and plan your experience.</p>
+
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search activities...">
+
+      <select id="categoryFilter">
+        <option value="all">All Activities</option>
+        <option value="Water">Water Sports</option>
+        <option value="Air">Air Adventure</option>
+        <option value="Land">Land Adventure</option>
+      </select>
+
+      <select id="budgetFilter">
+        <option value="all">Any Budget</option>
+        <option value="budget">Below ₹1000</option>
+        <option value="medium">₹1000 - ₹2500</option>
+        <option value="premium">Above ₹2500</option>
+      </select>
+    </div>
+
+    <div class="cards" id="activityContainer">
+
+      <div class="activity-card" data-category="Water" data-price="1000">
+        <img src="Images/Rafting.jpeg" alt="River rafting">
+        <div class="card-content">
+          <span class="category">Water Sports</span>
+          <h3>River Rafting</h3>
+          <p>Experience the thrill of rafting through the rapids of the Ganga.</p>
+          <div class="price">₹1,000 <small>/ person (sample)</small></div>
+          <button onclick="showDetails('River Rafting')">View Details</button>
+        </div>
+      </div>
+
+      <div class="activity-card" data-category="Air" data-price="3500">
+        <img src="Images/Bungee.jpeg" alt="Bungee jumping">
+        <div class="card-content">
+          <span class="category">Air Adventure</span>
+          <h3>Bungee Jumping</h3>
+          <p>Take the leap and experience an unforgettable adrenaline rush.</p>
+          <div class="price">₹3,500 <small>/ person (sample)</small></div>
+          <button onclick="showDetails('Bungee Jumping')">View Details</button>
+        </div>
+      </div>
+
+      <div class="activity-card" data-category="Land" data-price="1800">
+        <img src="Images/Camping.jpeg" alt="Camping">
+        <div class="card-content">
+          <span class="category">Land Adventure</span>
+          <h3>Riverside Camping</h3>
+          <p>Enjoy a night under the stars surrounded by nature.</p>
+          <div class="price">₹1,800 <small>/ person (sample)</small></div>
+          <button onclick="showDetails('Riverside Camping')">View Details</button>
+        </div>
+      </div>
+
+      <div class="activity-card" data-category="Land" data-price="800">
+        <img src="Images/Trekking.jpeg" alt="Trekking">
+        <div class="card-content">
+          <span class="category">Land Adventure</span>
+          <h3>Nature Trekking</h3>
+          <p>Explore scenic trails and discover the beauty of the hills.</p>
+          <div class="price">₹800 <small>/ person (sample)</small></div>
+          <button onclick="showDetails('Nature Trekking')">View Details</button>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="noResults" class="no-results" hidden>No activities found. Try changing your filters.</p>
+
+    <p class="disclaimer">
+      Demo notice: All activities and prices shown are sample data, not verified offers.
+      Check operator credentials, safety equipment, age and health requirements,
+      availability and final price before booking.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2026 YatraX | Explore Uttarakhand Responsibly</p>
+  </footer>
+
+  <script src="adventure.js"></script>
+</body>
+</html>
