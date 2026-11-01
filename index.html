@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 0content="width=device-width, initial-scale=1.0">
+  <title>YatraX | Explore Uttarakhand</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="brand">
+      
+
+
+
+
+      <span class="brand-name">YatraX</span>
+      <span class="tagline">Travel Fairly · Explore Safely</span>
+    </a>
+
+    <nav class="nav-links">
+      <button id="searchIcon" aria-label="Search">⌕</button>
+      <button id="notificationBtn" aria-label="Notifications">♧</button>
+      <button id="loginBtn" class="plain-btn">Login</button>
+      <button id="signupBtn" class="dark-btn">Sign Up</button>
+      <button id="emergencyBtn" class="lime-btn">✚ Emergency</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">— &nbsp; UTTARAKHAND</p>
+        <h1>Explore<br><span>Uttarakhand</span></h1>
+        <p class="hero-description">
+          Discover beautiful places, local culture and safe journeys.
+        </p>
+      </div>
+
+      <form class="search-bar" id="searchForm">
+       
+<span class="location-icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+</span>
+
+        <input
+          type="search"
+          id="destinationInput"
+          placeholder="Search destination, hotel, activity or yatra..."
+        >
+        <button type="submit" aria-label="Search destinations">⌕</button>
+      </form>
+
+      <div class="destinations">
+       
+<button data-place="Dehradun">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+  Dehradun
+</button>
+
+      
+<button data-place="Rishikesh">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+ Rishikesh
+</button>
+
+        
+<button data-place="Haridwar">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+ Haridwar
+</button>
+
+         
+<button data-place="Mussoorie">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+  Mussoorie
+</button>
+
+        
+<button data-place="Nanital">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+  Nanital
+</button>
+
+        
+<button data-place="Auli">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+ Auli
+</button>
+
+    
+<button data-place="Jim Corbett">
+  <svg class="place-icon" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+          fill="#064b39"/>
+    <circle cx="12" cy="10" r="2.5" fill="white"/>
+  </svg>
+ Jim Corbett
+<div class="more-wrapper">
+  <button id="moreBtn">More⌄</button>
+</div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features">
+
+      <article class="feature-card mint" data-feature="Specialities">
+        
+<div class="feature-icon">
+  <img
+    src="Images/Specialities1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Specialities</h2>
+        <p>Local culture, traditions and unique experiences.</p>
+        <button class="arrow-btn" aria-label="Explore Specialities">↗</button>
+        <img src="Images/Specialities.jpeg" alt="Mountain scenery">
+      </article>
+
+      <article class="feature-card sand" data-feature="Hidden Gems">
+         
+<div class="feature-icon">
+  <img
+    src="Images/Hidden Gems1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Hidden Gems</h2>
+        <p>Offbeat places, less crowd, more beauty.</p>
+        <button class="arrow-btn" aria-label="Explore Hidden Gems">↗</button>
+        <img src="Images/Hidden Gems.jpeg" alt="Beautiful lake">
+      </article>
+
+      <article class="feature-card blue" data-feature="Hotels">
+         
+<div class="feature-icon">
+  <img
+    src="Images/Hotel1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Hotels</h2>
+        <p>Find comfortable stays for your journey.</p>
+        <button class="arrow-btn" aria-label="Explore Hotels">↗</button>
+        <img src="Images/Hotels.jpeg" alt="Hotel room">
+      </article>
+
+      <article class="feature-card sand" data-feature="Shops">
+         
+<div class="feature-icon">
+  <img
+    src="Images/Shopes1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Shops</h2>
+        <p>Explore local markets and authentic products.</p>
+        <button class="arrow-btn" aria-label="Explore Shops">↗</button>
+        <img src="Images/Shopes.jpeg" alt="Shopping market">
+      </article>
+
+      <article class="feature-card rose" data-feature="Emergency">
+        
+<div class="feature-icon">
+  <img
+    src="Images/Emeregency1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Emergency</h2>
+        <p>Find emergency assistance during your journey.</p>
+        <button class="arrow-btn" aria-label="Emergency help">↗</button>
+        <img src="Images/Emergency.jpeg" alt="Emergency vehicle">
+      </article>
+
+      <article class="feature-card mint" data-feature="AI Assistant">
+         
+<div class="feature-icon">
+  <img
+    src="Images/AI1.jpeg"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>AI Assistant</h2>
+        <p>Get personalised travel help anytime.</p>
+        <button class="arrow-btn" aria-label="Open AI Assistant">↗</button>
+        <img src="Images/AI.jpeg" alt="Nature and wildlife">
+      </article>
+
+      <article class="feature-card price-card" data-feature="Fair Price Check">
+        
+<div class="feature-icon">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+    alt="Specialities"
+  >
+</div>
+
+        <h2>Fair Price Check</h2>
+        <p>Check local travel prices before you go.</p>
+        <div class="price-row">🚌 Local bus <strong>₹20–₹60</strong></div>
+        <div class="price-row">🛺 E-rickshaw <strong>₹30–₹100</strong></div>
+        <div class="price-row">🛏️ Homestay <strong>₹800–₹2,000</strong></div>
+        <button class="arrow-btn" aria-label="Check prices">↗</button>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Mountain road">
+      </article>
+
+    </section>
+  </main>
+  
+
+  
+<!-- EXPLORE YATRAX SECTION -->
+<section class="explore-section">
+
+  <div class="explore-heading">
+    <p class="explore-label">YOUR NEXT ADVENTURE</p>
+    <h2>What's waiting for you<br>on <span>YatraX?</span></h2>
+    <p class="explore-description">
+      Discover hidden places, plan your journey and explore Uttarakhand
+      with confidence.
+    </p>
+  </div>
+
+  <div class="explore-layout">
+
+    <!-- LEFT FEATURE CARDS -->
+    <div class="explore-side left-side">
+
+      <article class="explore-tile tile-mint">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+          alt="Destination icon"
+        >
+        <h3>Hidden Gems</h3>
+        <p>Discover places beyond the usual tourist routes.</p>
+
+
+<img
+  class="tile-photo"
+  src="Images/Hidden Gems2.jpeg"
+  alt="Beautiful mountain lake"
+>
+
+
+
+      </article>
+
+      <article class="explore-tile tile-cream">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+          alt="Travel planning icon"
+        >
+        <h3>Trip Planner</h3>
+        <p>Organise your next mountain adventure.</p>
+
+
+
+        <img
+  class="tile-photo"
+  src="Images/TripPlanner.jpeg"
+  alt="Beautiful mountain lake"
+>
+      </article>
+
+      <article class="explore-tile tile-blue">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1688/1688400.png"
+          alt="Hotel icon"
+        >
+        <h3>Hotels & Stays</h3>
+        <p>Find a comfortable place to stay.</p>
+
+
+
+        <img
+  class="tile-photo"
+  src="Images/Stays.jpeg"
+  alt="Beautiful mountain lake"
+>
+      </article>
+
+    </div>
+
+    <!-- CENTER PHONE -->
+    <div class="explore-phone-area">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+
+        <div class="phone-screen">
+          <div class="phone-top">
+            <span>YatraX</span>
+            <span>● ● ●</span>
+          </div>
+
+          <img
+            class="phone-hero-image"
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85"
+            alt="Himalayan mountain destination"
+          >
+
+          <div class="phone-content">
+            <p class="phone-small-label">EXPLORE UTTARAKHAND</p>
+            <h3>Your journey,<br>your way.</h3>
+            <p>Mountains, memories and meaningful travel.</p>
+
+            <div class="phone-mini-card">
+              <span></span>
+              <div>
+                <strong>Mountain Escape</strong>
+                <p>Find your next destination</p>
+              </div>
+            </div>
+
+            <div class="phone-bottom-nav">
+              <span>⌂<small>Home</small></span>
+              <span>♡<small>Saved</small></span>
+              <span>⌖<small>Explore</small></span>
+              <span>●<small>Profile</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT FEATURE CARDS -->
+    <div class="explore-side right-side">
+
+      <article class="explore-tile tile-pink">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1034/1034146.png"
+          alt="Safety icon"
+        >
+        <h3>Safe Travel</h3>
+        <p>Keep important safety information close.</p>
+
+
+        <img
+  class="tile-photo"
+  src="Images/Travel.jpeg"
+  alt="Beautiful mountain lake"
+>
+      </article>
+
+      <article class="explore-tile tile-mint">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+          alt="AI assistant icon"
+        >
+        <h3>AI Assistant</h3>
+        <p>Get help planning your journey.</p>
+
+
+        <img
+  class="tile-photo"
+  src="Images/AI2.webp"
+  alt="Beautiful mountain lake"
+>
+      </article>
+
+      <article class="explore-tile tile-cream">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2830/2830284.png"
+          alt="Fair pricing icon"
+        >
+        <h3>Fair Prices</h3>
+        <p>Explore local transport and stay costs.</p>
+
+        <img
+  class="tile-photo"
+  src="Images/Price.png"
+  alt="Beautiful mountain lake"
+>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+  
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="#" class="footer-logo">▲ YatraX</a>
+      <p>Travel Fairly. Explore Safely.</p>
+      <p>Discover Uttarakhand with confidence.</p>
+    </div>
+
+    <!-- EXPLORE -->
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <a href="#">Popular Destinations</a>
+      <a href="#">Hidden Gems</a>
+      <a href="#">Local Experiences</a>
+      <a href="#">Trip Planner</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-column">
+      <h3>Travel Services</h3>
+      <a href="#">Hotels & Homestays</a>
+      <a href="#">Local Shops</a>
+      <a href="#">Fair Price Check</a>
+      <a href="#">AI Travel Assistant</a>
+    </div>
+
+    <!-- SAFETY -->
+    <div class="footer-column">
+      <h3>Help & Safety</h3>
+      <a href="#">Emergency Assistance</a>
+      <a href="#">Travel Safety Tips</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About YatraX</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 YatraX. All rights reserved.</p>
+
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <p>Made for travellers, inspired by Uttarakhand ♥</p>
+  </div>
+
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

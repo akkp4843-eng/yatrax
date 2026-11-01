@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YatraX AI Travel Guide</title>
+    <link rel="stylesheet" href="assistant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">YatraX</a>
+    <span>AI Travel Guide</span>
+</header>
+
+<main class="container">
+
+    <section class="welcome">
+        <div class="ai-icon">✦</div>
+        <h1>Your Personal Uttarakhand Travel Guide</h1>
+        <p>Explore destinations, discover hidden gems, find hotels, real prices and plan your journey with YatraX AI.</p>
+    </section>
+
+    <section class="search-section">
+        <label for="destination">Where do you want to explore?</label>
+        <div class="search-box">
+            <input id="destination" type="text" placeholder="Try Rishikesh, Dehradun, Mussoorie...">
+            <button id="exploreBtn">Explore</button>
+        </div>
+    </section>
+
+    <section class="chat-section">
+        <div class="chat-header">
+            <div>
+                <h2>YatraX AI Assistant</h2>
+                <small>Ask anything about your destination</small>
+            </div>
+            <span class="online">● Online</span>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+            <div class="message ai-message">
+                Namaste! 🙏 Main YatraX AI hoon.
+                <br><br>
+                Mujhe kisi destination ka naam batao. Main tumhe uski complete travel guide, famous places, hidden gems, hotels, food prices, hospitals aur map routes dikhane mein help karunga.
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <button class="suggestion">Best places to visit</button>
+            <button class="suggestion">Hidden gems</button>
+            <button class="suggestion">Budget hotels</button>
+            <button class="suggestion">Famous food & prices</button>
+            <button class="suggestion">Nearby hospitals</button>
+        </div>
+
+        <form id="chatForm" class="chat-input">
+            <input id="userMessage" type="text" placeholder="Ask your travel question..." autocomplete="off">
+            <button type="submit">➤</button>
+        </form>
+    </section>
+
+</main>
+
+<script src="assistant.js"></script>
+</body>
+</html>
